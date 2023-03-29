@@ -1,0 +1,206 @@
+.easay {
+  background: #f3f5f9, url(../img/Element/Svg/Bg1.svg) no-repeat;
+  padding-top: 40px;
+  /*
+   &__square{
+          height:100%;
+          width: 100%;
+          position: absolute;
+          order: 1;
+          overflow: hidden;
+          border: 2px solid black;
+
+      }
+
+      &__square-hidden{
+          width: 50px;
+          height: 50px;
+          background: #fff;
+          border: 2px solid black;
+          position: absolute;
+          transform: rotate(45deg);
+          bottom: 60px;
+          left: -26px;
+          order: 1;
+
+       }
+
+       &__card:hover &__square-hidden{
+          background: red;
+          box-shadow: 5px 5.464px 3.5px rgba(155,182,190,0.75);
+       }*/
+}
+.easay p {
+  font-size: 18px;
+  font-family: "Arial Narrow";
+}
+.easay__title {
+  overflow: hidden;
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  z-index: 3;
+  position: relative;
+}
+.easay__hidden {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.easay__hidden h2 {
+  margin: 0 auto;
+}
+.easay__grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 50px auto;
+}
+.easay li {
+  list-style-position: inside;
+  text-indent: 0px;
+}
+.easay__cards {
+  display: flex;
+  margin: 0 7px;
+  position: relative;
+  order: 2;
+}
+.easay__card:hover {
+  background: #fff;
+  filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+}
+.easay__card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 7px;
+  position: relative;
+  margin-bottom: 50px;
+  order: 2;
+}
+.easay__image {
+  min-height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background-color: #caddea;
+  background-image: url(../img/css_sprites.png);
+  margin: 15px auto 20px;
+}
+.easay__card:hover .easay__image {
+  background: #1b7fd0;
+  filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+  background-image: url(../img/css_sprites.png);
+}
+.easay__card:hover .easay__img1 {
+  background-position: 5px -515px;
+}
+.easay__card:hover .easay__img2 {
+  background-position: 15px -1015px;
+}
+.easay__card:hover .easay__img3 {
+  background-position: 15px -685px;
+}
+.easay__card:hover .easay__img4 {
+  background-position: 120px -360px;
+}
+.easay__img1 {
+  background-position: 5px -435px;
+}
+.easay__img2 {
+  background-position: 15px 905px;
+}
+.easay__img3 {
+  background-position: 15px -600px;
+}
+.easay__img4 {
+  background-position: 23px -285px;
+}
+.easay__cardtitle {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #1b7fd0;
+  font-weight: 500;
+  font-family: "Roboto-medium";
+  text-align: center;
+  min-height: 80px;
+}
+.easay__text {
+  font-size: 16px;
+  font-family: "Arial Narrow";
+  text-align: justify;
+  flex: 1 1 auto;
+}
+.easay__button {
+  align-self: center;
+  width: 120px;
+  height: 35px;
+  margin: 25px 0 20px;
+}
+.easay__button a {
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  background: #075da1;
+}
+.easay__button a:hover {
+  background: #0983e5;
+}
+
+@media (max-width: 1024px) {
+  .easay__grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px auto;
+  }
+}
+@media (max-width: 524px) {
+  .easay__grid {
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px auto;
+  }
+}
+@media (max-width: 320px) {
+  .easay__image {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #caddea;
+    background-image: url(../img/css_sprites.png);
+    margin: 15px auto 20px;
+  }
+  .easay__grid {
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px auto;
+    grid-template-areas: "mashin light pensil note" "pallet pallet pallet pallet";
+  }
+  .easay__grid .mashin {
+    grid-template-areas: mashin;
+  }
+  .easay__grid .lamp {
+    grid-template-areas: lamp;
+  }
+  .easay__grid .pensil {
+    grid-template-areas: pensil;
+  }
+  .easay__grid .note {
+    grid-template-areas: note;
+  }
+  .easay__grid .pallet, .easay__grid .pallet1 {
+    grid-template-areas: pallet;
+    display: none;
+  }
+  .easay__grid .pallet1 {
+    display: block;
+    max-width: 95vh;
+    margin: 15px auto;
+  }
+}/*# sourceMappingURL=easay.css.map */

@@ -1,0 +1,313 @@
+.offer {
+}
+section.forma{
+    height: 300px;
+    width: 100%;
+    background-color: #075da2;
+    background-image: url(../img/Element/Svg/Bg3-1.svg);
+
+}
+
+.form {
+    label {
+        color: white;
+        text-transform: uppercase;
+        margin: 0 30px;
+    }
+
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(3, 32.333%);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "titlerow titlerow titlerow"
+    "place1 place2 place3"
+    "place4 price order1";
+    input{
+        margin: 15px 30px;
+        height: 30px;
+        width: 90%;
+
+    }
+
+    .company {
+
+		&__but {
+		}
+
+		&__hidden {
+
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+            height: 50px;
+
+		}
+        }
+		&__buttons {
+            display: none;
+		}
+
+		&__title {
+        height: 70px;
+        overflow: hidden;
+        grid-area: titlerow;
+        margin-top: 20px;
+        h2 {
+            margin-left: 25px;
+        }
+
+		}
+
+		&__title-order {
+             grid-area: titleorder;
+             display: flex;
+             align-items:center;
+                        .big{
+                position: relative;
+                top: 5px;
+             }
+             div{
+                p{
+                    margin-right: 15px;
+                    font-size: 24px;
+                }
+            }
+
+		}
+
+		&__place {
+            grid-area: place;
+
+		}
+
+		&__price {
+            grid-area: price;
+            color: white;
+            text-transform: uppercase;
+            display: flex;
+            align-items: end;
+            margin-bottom: 20px;
+           justify-content: center;
+            .big{
+                margin-left: 20px;
+            }
+    		}
+
+		&__order {
+            grid-area: order1;
+            margin-right: 15px;
+            margin-top: 10px;
+            .submit {
+                height: 50px;
+                width: 94%;
+            }
+
+ }
+}
+
+.romb {
+    height: 50px;
+    width: 25px;
+    background: url(../img/Element/Svg/Arrow.svg) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 15px;
+}
+.red {
+    color: red;
+}
+.big {
+    font-size: 48px;
+
+}
+.subbig {
+    font-size: 34px;
+    position: relative;
+    top: 3px;
+    text-transform: uppercase;
+}
+
+
+.squarered {
+}
+.submit {
+    height: 80px;
+}
+.place1{
+    grid-area: place1;
+}
+.place2{
+    grid-area: place2;
+}
+.place3{
+    grid-area: place3;
+}
+.place4{
+    grid-area: place4;
+}
+
+@media (max-width:1059px) {
+
+    .form {
+    
+            &__price {
+                .big{
+                    margin-left: 0px;
+                }
+    
+            }
+    
+    }
+}
+
+@media (max-width:1024px) {
+
+    .form {
+
+        grid-template-columns: repeat(2, 49%);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "titlerow titlerow"
+        "place1 place2"
+        "place3 place4"
+        "price order1";
+        .form {
+    
+            &__price {
+                margin-bottom: 30px;
+            }
+    
+            }
+    }
+    section.forma{
+        height: auto;
+        }
+}
+
+@media (max-width:775px) {
+    .romb{
+        margin-left: 20px;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: 
+        "titlerow"
+        "place1"
+        "place2"
+        "place3"
+        "place4"
+        "price"
+        "order1";
+        label{
+            margin-left: 0;
+        }
+        .submit {
+            width: 88%;
+        }
+        input{
+            width: 85%;
+            margin-left: 0;
+        }
+        &__price {
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 0;
+            }
+        .mobile-h2{
+                display: none;
+          
+        }
+        &__title-order {
+
+           justify-content: start;
+            margin-left: 0px;
+         }
+         &__title{
+            width: 95%;
+            font-size: 18px;
+            height: 80px;
+            margin-left: 0px;
+            margin-bottom: 15px;
+
+         }
+    }
+    section.forma{
+        height: auto;
+        }
+        .form__title-order div p {
+            font-size: 16px}
+            .big{
+                font-size: 33px;
+            }
+            .subbig{
+                font-size: 26px;
+            }
+
+}
+
+@media (max-width:320px) {
+
+    .company {
+        height: auto;
+        &__hiden-mobile{
+            display: block;
+            height: 60px;
+            display: flex;
+            align-items: start;
+            margin-top: 0;
+          
+            .form__title{
+                margin-top: 0;
+                width: 100%;
+
+            }  
+        }
+
+    }
+    .form{
+        &__price{
+            .big{
+                font-size: 49px;
+            }
+            .subbig{
+                font-size: 33px;
+            }
+      }
+        &__title{
+            p{
+                margin-left: 10px;  
+            }
+         
+        }
+       
+        label{
+            margin-left: 0;
+        }
+        .mobile-h2{
+                display: block;
+                font-size: 16px;
+                line-height: 50px
+    
+        }
+        .mobile-h3{
+            display: none;
+        }
+    }
+    .big{
+       font-size: 32px;
+    }
+    .subbig{
+        font-size: 22px;
+    }
+    .form__title-order div p {
+        font-size: 16px;
+      }
+      .romb{
+        display: none;
+      }
+
+}

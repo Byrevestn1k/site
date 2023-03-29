@@ -1,0 +1,50 @@
+.lightblue {
+  background-color: #1b7fd0;
+  background-image: url(../img/Element/Svg/Bg3.svg);
+  width: 100%;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.lightblue p {
+  font-size: 24px;
+  color: #e9f7fe;
+  font-family: "Arial Narrow";
+  text-align: center;
+}
+.lightblue__grid {
+  margin-top: 40px;
+}
+.lightblue__grid-items {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.lightblue__grid-item {
+  padding: 15px;
+}
+.lightblue__grid-img {
+  display: flex;
+  justify-content: start;
+}
+.lightblue__grid-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  line-height: 35px;
+  font-size: 25px;
+  color: #1b7fd0;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+.lightblue__grid-text {
+  border-bottom: 2px solid white;
+  padding: 15px 0;
+}
+.lightblue__grid-text p {
+  text-align: left;
+  font-size: 22px;
+  color: #ffffff;
+  font-family: "Arial Narrow";
+}

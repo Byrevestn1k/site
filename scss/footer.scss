@@ -1,0 +1,114 @@
+.footer {
+
+
+
+   &__lightrow {
+      height: 70px;
+      background: #caddea;
+      .container{
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+
+   &__cards {
+      height: 70px;
+      display: flex;
+
+      align-items: center;
+   }
+
+   &__cards-item {
+      width: 70px;
+      height: 45px;
+      margin-left: 15px;
+
+   }
+
+   &__socials {
+      height: 70px;
+      display: flex;
+      align-items: center;
+   }
+
+   &__fb {
+      height: 40px;
+      width: 40px;
+      background: url(../img/Element/Svg/Facebook.svg) no-repeat;
+      background-position: center center;
+   }
+
+   &__tweeter {
+      height: 40px;
+      width: 40px;
+      background: url(../img/Element/Svg/Twiter2.svg) no-repeat;
+      background-position: center center;
+      margin: 0 40px;
+   }
+
+   &__pinterest {
+      height: 40px;
+      width: 40px;
+      background: url(../img/Element/Svg/Pinterest.svg) no-repeat;
+      background-position: center center;
+      margin-right: 110px;
+   }
+
+   
+}
+
+.item1 {
+   background: url(../img/Element/Payment-systems/americanexpress.svg);
+}
+.item2 {
+   background: url(../img/Element/Payment-systems/diners-club.svg);
+}
+.item3 {
+   background: url(../img/Element/Payment-systems/discover.svg);
+}
+.item4 {
+   background: url(../img/Element/Payment-systems/jcb.svg);
+}
+.item5 {
+   background: url(../img/Element/Payment-systems/mastercard.svg);
+}
+.item6 {
+   background: url(../img/Element/Payment-systems/paypal.svg);
+}
+.item7 {
+   background: url(../img/Element/Payment-systems/visa.svg);
+}
+
+/*&__darckrow {
+      height: 370px;
+      background: #013056;
+   }*/
+
+   .footer {
+
+		&__darcrow {
+         height: 370px;
+         background: #013056;
+		}
+
+		&__columns {
+         display: flex;
+		}
+      &__columns:nth-child(6){
+         margin-right: 0 !important;
+      }
+
+		&__col {
+         ul{
+            list-style-type: none;
+            font-size: 18px;
+            color: #caddea;
+            font-family: "Arial Narrow";
+            text-align: left;
+         }
+        width: 170px;
+        margin: 30px 15px;
+		}
+}
+.container {
+}

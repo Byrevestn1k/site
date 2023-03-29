@@ -1,0 +1,208 @@
+.howitworck {
+  background: #f3f5f9;
+  padding: 50px 0;
+}
+.howitworck__grid {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: 5fr 3fr;
+  grid-area: "item col2";
+  margin-top: 40px;
+}
+.howitworck__grid-items {
+  grid-template-areas: item;
+  margin-right: 15px;
+}
+.howitworck__grid-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #caddea;
+  position: relative;
+  line-height: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #1b7fd0;
+  font-weight: 500;
+  font-family: "Roboto";
+  text-decoration: none;
+}
+.howitworck__grid-image {
+  font-size: 49px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #caddea;
+  font-weight: 700;
+  font-family: "Rajdhani";
+  text-align: center;
+  margin: 20px 20px;
+}
+.howitworck__grid-text {
+  height: 100%;
+}
+.howitworck__grid-items-col2 {
+  grid-template-areas: col2;
+  background: #fff;
+  filter: drop-shadow(2px 3.464px 3.5px rgba(167, 192, 200, 0.75));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.howitworck__content {
+  position: absolute;
+  background: #ffffff;
+  height: 100%;
+}
+.howitworck__grid-items-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: #c9dde9;
+  margin: 60px auto 40px;
+  background-image: url(../img/css_sprites.png);
+  background-position: 5px -435px;
+}
+.howitworck__grid-items-text {
+  margin: 0 45px 75px;
+}
+.howitworck__grid-items-text p {
+  font-size: 18px;
+  color: #000000;
+  font-family: "Arial Narrow";
+  text-align: justify;
+}
+.howitworck__button {
+  text-align: center;
+  margin-top: 40px;
+}
+.howitworck__grid-item:hover {
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Roboto";
+  color: #ffffff;
+  background-color: #075da2;
+}
+.howitworck__grid-item:hover h4 {
+  margin-right: 40px;
+}
+.howitworck__grid-item:hover .triangle {
+  display: block;
+}
+
+.button-order {
+  display: inline-block;
+  overflow: hidden;
+  height: 80px;
+}
+.button-order a {
+  background: #dd0000;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-decoration: none;
+  line-height: 50px;
+  padding: 10px 80px;
+  position: relative;
+}
+.button-order a .square {
+  background: #dd0000;
+}
+
+.triangle {
+  width: 63px;
+  height: 63px;
+  background: #075da2;
+  transform: rotate(45deg);
+  position: absolute;
+  display: none;
+  z-index: 6;
+  right: -32px;
+}
+
+@media (max-width: 735px) {
+  .howitworck__grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(auto-fit, minmax(300px, 2fr));
+    grid-area: "item" "col2";
+  }
+  .howitworck__grid-items-col2 {
+    display: none;
+  }
+  .howitworck__grid-item:hover .triangle {
+    display: none;
+  }
+  #content1 {
+    grid-template-areas: content1;
+  }
+  #content2 {
+    grid-template-areas: content2;
+  }
+  #content3 {
+    grid-template-areas: content3;
+  }
+  #content4 {
+    grid-template-areas: content4;
+  }
+  #content5 {
+    grid-template-areas: content5;
+  }
+  #content6 {
+    grid-template-areas: content6;
+  }
+  a[href="#content1"] {
+    grid-template-areas: content1;
+  }
+  #content2 {
+    grid-template-areas: content2;
+  }
+  #content3 {
+    grid-template-areas: content3;
+  }
+  #content4 {
+    grid-template-areas: content4;
+  }
+  #content5 {
+    grid-template-areas: content5;
+  }
+  #content6 {
+    grid-template-areas: content6;
+  }
+}
+/*tabs*/
+.howitworck__img1 {
+  background-position: 0px -1105px;
+}
+.howitworck__img2 {
+  background-position: 5px -1643px;
+}
+.howitworck__img3 {
+  background-position: 5px -79px;
+}
+.howitworck__img4 {
+  background-position: 10px -763px;
+}
+.howitworck__img5 {
+  background-position: 15px -1280px;
+}
+.howitworck__img6 {
+  background-position: 15px -1462px;
+}
+.howitworck__grid-items-col2 .howitworck__content {
+  z-index: 1;
+}
+.howitworck #content1 {
+  z-index: 2;
+}
+.howitworck__content:target {
+  z-index: 5;
+}
+.howitworck__content:not(#content1) {
+  display: none;
+}
+.howitworck__content:target {
+  display: block;
+}/*# sourceMappingURL=howitworck.css.map */
