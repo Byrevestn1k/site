@@ -1,7 +1,16 @@
 @import url(header.css);
 @import url(./compani.css);
-@import url(./easay.css);
+/*@import url(./easay.css);
 @import url(./form.css);
 @import url(./why-order.css);
 @import url(./howitworck.css);
-@import url(./footer.css);
+@import url(./footer.css);*/
+
+
+@import url(../scss/header.scss);
+@import url(../scss/compani.css);
+@import url(../scss/easay.css);
+@import url(../scss/form.css);
+@import url(../scss/why-order.css);
+@import url(../scss/howitworck.css);
+@import url(../scss/footer.css);

@@ -85,12 +85,18 @@
    }*/
 
    .footer {
+      
 
 		&__darcrow {
-         height: 370px;
+         min-height: 370px;
          background: #013056;
-		}
-
+	}
+      &__sircle{
+            background: url(../img/footer__sirkle.png);
+            height: 37px;
+            width: 100%;
+         }
+	
 		&__columns {
          display: flex;
 		}
