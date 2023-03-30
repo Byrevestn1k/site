@@ -75,12 +75,18 @@
       background: #013056;
    }*/
 .footer__darcrow {
-  min-height: 370px;
+  height: 370px;
   background: #013056;
 }
+.footer__darcrow p {
+  font-size: 16px;
+  color: #caddea;
+  font-family: "Arial Narrow";
+  text-align: center;
+}
 .footer__sircle {
-  background: url(../img/footer__sirkle.png);
-  height: 37px;
+  background: url(../img/footer__sirkle.png) no-repeat;
+  height: 39px;
   width: 100%;
 }
 .footer__columns {
@@ -99,4 +105,18 @@
   color: #caddea;
   font-family: "Arial Narrow";
   text-align: left;
+}
+.footer .header__nav {
+  justify-content: start;
+}
+.footer .header__nav li .stick {
+  bottom: 19px;
+}
+.footer .header__nav li a {
+  color: #caddea;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Roboto";
+  text-decoration: none;
 }/*# sourceMappingURL=footer.css.map */

@@ -173,6 +173,15 @@
   }
 }
 /*tabs*/
+.howitworck {
+  /* &__content:not(#content1){
+      display: none;
+    }
+
+    &__content:target{
+      display: block ;
+    }*/
+}
 .howitworck__img1 {
   background-position: 0px -1105px;
 }
@@ -199,10 +208,4 @@
 }
 .howitworck__content:target {
   z-index: 5;
-}
-.howitworck__content:not(#content1) {
-  display: none;
-}
-.howitworck__content:target {
-  display: block;
 }/*# sourceMappingURL=howitworck.css.map */
